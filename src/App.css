@@ -1,38 +1,191 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap");
+
+body {
+  background-color: none;
+  width: 100%;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#bar1,
+#bar2,
+#bar3 {
+  transition: transform 1s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.dubai,
+.japan,
+.bali {
+  width: 100%;
+  height: 650px;
+  object-fit: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: inset 700px 500px 200px rgba(1, 1, 1, 0.3);
+}
+
+@media (min-width: 1536px) {
+  .dubai,
+  .japan,
+  .bali {
+    height: 1000px;
+  }
+
+  .swiper-pagination {
+    margin-left: 10rem !important;
+    margin-bottom: 2rem !important;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.swiper-button-next {
+  background-color: rgba(1, 1, 1, 0.3) !important;
+  border-radius: 100% !important;
+  width: 40px !important;
+  height: 40px !important;
+  margin-right: 2rem !important;
+  margin-top: 2rem !important;
+}
+
+.swiper-button-prev {
+  display: none !important;
+  background-color: rgba(1, 1, 1, 0.3) !important;
+  border-radius: 100% !important;
+  width: 40px !important;
+  height: 40px !important;
+  margin-left: 2rem !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
   color: white;
+  font-size: 15px !important;
 }
 
-.App-link {
-  color: #61dafb;
+ .swiper-pagination{
+  margin-bottom: 0.3rem;
+  margin-left: 3rem;
+  text-align: left !important;
+ }
+
+.swiper-pagination-bullet {
+  border-spacing: 20px;
+  width: 15px !important;
+  height: 15px !important;
+  background-color: white !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.compare {
+  right: 35rem;
+  width: 22rem;
+  height: 30rem;
+}
+
+.prestige {
+  width: 20rem;
+  height: 25rem;
+  background-size: cover;
+}
+
+.royal-xl {
+  width: 22rem;
+  height: 28rem;
+  background-size: cover;
+}
+
+.royal {
+  width: 20rem;
+  height: 25rem;
+  background-size: cover;
+}
+
+.imperial {
+  width: 20rem;
+  height: 25rem;
+  background-size: cover;
+}
+
+.imperial-desc {
+  width: 19rem;
+  height: 22rem;
+}
+
+.royal-desc {
+  width: 19rem;
+  height: 22rem;
+}
+
+.royal-desc-xl {
+  width: 19rem;
+  height: 24rem;
+}
+
+.cross {
+  text-decoration: line-through;
+  text-decoration-color: red;
+}
+
+.detail-pack {
+  list-style: none;
+}
+
+.detail-pack li::before {
+  content: "\2022";
+  color: #16253a;
+  font-weight: 500;
+  display: inline-block;
+  width: 1em;
+}
+
+.detail-pack-royal {
+  list-style: none;
+}
+
+.detail-pack-royal li::before {
+  content: "\2022";
+  color: #ffffff;
+  font-weight: 500;
+  display: inline-block;
+  width: 1em;
+}
+
+.video {
+  width: 100%;
+  position: relative;
+  padding-bottom: 55%;
+  padding-top: 25px;
+  height: 0;
+}
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 640px) {
+  .video {
+    width: 80%;
+    position: relative;
+    padding-bottom: 35%;
+    padding-top: 25px;
+    height: 0;
   }
-  to {
-    transform: rotate(360deg);
+  .video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
   }
 }
