@@ -23,7 +23,7 @@ export default function Section1() {
               <img
                 src={ico4}
                 alt=""
-                className="hidden xl:inline absolute xl:ml-52 2xl:ml-56 xl:-mt-10 2xl:-mt-16 z-50 xl:w-3/12 2xl:w-auto"
+                className="hidden xl:inline absolute xl:ml-52 2xl:ml-56 xl:-mt-10 2xl:-mt-16 z-30 xl:w-3/12 2xl:w-auto"
               />
               <p className="uppercase text-xs 2xl:text-sm">
                 Find a Lower Price Anywhere Online and We Will Refund you{" "}
